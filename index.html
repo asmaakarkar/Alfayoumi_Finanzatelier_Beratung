@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <!-- <link rel="stylesheet" href="assets/css/tailwind.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+    <title> Alfayoumi Finanzatelier & Beratung </title>
+</head>
+
+<body class="text-gray-800 antialiased">
+    <nav id="navbar"
+        class="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 bg-transparent transition-all duration-300 ease-in-out shadow-lg">
+        <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+            <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+                <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
+                    href="#">
+                    <img src="assets/img/logo.png" alt="Logo" class="h-12 inline-block">
+                </a>
+                <button
+                    class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+                    type="button" onclick="toggleNavbar('example-collapse-navbar')">
+                    <i class="text-white fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
+                id="example-collapse-navbar">
+                <ul class="flex flex-col lg:flex-row list-none mx-auto">
+                    <li class="flex items-center">
+                        <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            href="#home">
+                            Home
+                        </a>
+                    </li>
+                    <li class="flex items-center">
+                        <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            href="#leistungen">
+                            Leistungen
+                        </a>
+                    </li>
+                    <li class="flex items-center">
+                        <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            href="#team">
+                            Team
+                        </a>
+                    </li>
+                    <!--aktuelles.html -->
+                    <!-- <li class="flex items-center">
+                        <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                        href="#" 
+                        >
+                            Aktuelles
+                        </a>
+                    </li> -->
+                    <li class="flex items-center">
+                        <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            href="#kontakt">
+                            Kontakt
+                        </a>
+                    </li>
+                </ul>
+                <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+                    <li class="flex items-center">
+                        <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            href="https://www.linkedin.com/in/salem-alfayoumi-04b18116b/">
+                            <i class="lg:text-gray-300 text-gray-500 fab fa-linkedin text-lg leading-lg"></i>
+                            <span class="lg:hidden inline-block ml-2">linkedin</span>
+                        </a>
+                    </li>
+                    <!-- <li class="flex items-center">
+                        <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            href="#pablo">
+                            <i class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg"></i>
+                            <span class="lg:hidden inline-block ml-2">Tweet</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center">
+                        <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            href="#pablo">
+                            <i class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg"></i>
+                            <span class="lg:hidden inline-block ml-2">Star</span>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content Section -->
+    <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;" id="home">
+        <div class="absolute top-0 w-full h-full bg-center bg-cover"
+            style='background-image: url("assets/img/steuer-head.jpeg");'>
+            <span id="blackOverlay" class="w-full h-full absolute opacity-40 bg-black"></span>
+        </div>
+        <div class="container relative mx-auto">
+            <div class="items-center flex flex-wrap">
+                <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+                    <div class="pr-12">
+                        <h1 class="text-white font-semibold text-5xl">
+                            Alfayoumi                        </h1>
+                        <h1 class="text-white font-semibold text-5xl">
+                              Finanzatelier & Beratung                         </h1>
+                        <p class="mt-4 text-lg text-gray-300">
+                            Wir begleiten ihr Unternehmen, egal ob Einzelfirma oder Gesellschaft, in guten und in
+                            schlechten Zeiten.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+            style="height: 70px;">
+            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+    </div>
+
+    <section class="pb-20 bg-gray-300 -mt-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap">
+                <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                        <div class="px-4 py-5 flex-auto">
+                            <div
+                                class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h6 class="text-xl font-semibold">Awarded Agency</h6>
+                            <p class="mt-2 mb-4 text-gray-600">
+                                Wir begleiten ihr Unternehmen, egal ob Einzelfirma oder Gesellschaft, in guten und in
+                                schlechten Zeiten.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-4/12 px-4 text-center">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                        <div class="px-4 py-5 flex-auto">
+                            <div
+                                class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
+                                <i class="fas fa-retweet"></i>
+                            </div>
+                            <h6 class="text-xl font-semibold">Free Revisions</h6>
+                            <p class="mt-2 mb-4 text-gray-600">
+                                Wir betreuen Gesellschaften,
+                                Einzelunternehmen, Freiberufler und Künstler nicht nur in Berlin sondern Bundesweit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-6 w-full md:w-4/12 px-4 text-center">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                        <div class="px-4 py-5 flex-auto">
+                            <div
+                                class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
+                                <i class="fas fa-fingerprint"></i>
+                            </div>
+                            <h6 class="text-xl font-semibold">Verified Company</h6>
+                            <p class="mt-2 mb-4 text-gray-600">
+                                Buchführung Lohnbuchhaltung Unternehmensgründung
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap items-center mt-32">
+                <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+                    <h3 class="text-3xl mb-2 font-semibold leading-normal">
+                        Die Zusammenarbeit mit uns ist ein Vergnügen </h3>
+                    <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                        Jedes erfolgreiche Unternehmen basiert auf einem verlässlichen Rechnungswesen. Das Finanzamt
+                        erwartet von ihnen monatlich oder quartalsweise die Abgabe einer Umsatzsteuervoranmeldung. Die
+                        dafür erforderliche Buchhaltung, ist bei uns in guten Händen.
+                    </p>
+                    <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                        Unsere Dienstleistungen im Bereich der Finanzbuchhaltung und auch der Lohn- und
+                        Gehaltsbuchhaltung erbringen wir gem.§ 6 Nr. 3 und Nr. 4 des Steuerberatungsgesetzes (StBerG)
+                        sowie § 1 Abs. 1 S. 2 der Steuerdatenübermittlungsverordnung (StDÜV). Leistungen darüber hinaus
+                        vermitteln wir an unsere Geschäftspartner, so dass Sie rundherum betreut sind, wenn Sie das
+                        wünschen
+                    </p>
+                </div>
+                <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+                    <div
+                        class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg h-full">
+                        <img alt="services" src="assets/img/services.jpeg" class="w-full align-middle rounded-lg" />
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="leistungen" class="py-8 bg-white sm:py-10 lg:py-16">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-5xl">
+                    Unsere Leistungen </h2>
+                <p class="mt-4 text-base leading-7 text-gray-600 sm:mt-8">
+                    Wir übernehmen für Sie
+                </p>
+            </div>
+            <div
+                class="grid grid-cols-1 mt-10 text-center sm:mt-16 sm:grid-cols-2 sm:gap-x-12 gap-y-12 md:grid-cols-4 md:gap-0 xl:mt-24">
+                <!-- Feature 1 -->
+                <div class="md:p-8 lg:p-14 flex flex-col justify-center items-center">
+                    <div class="w-14 h-14 rounded-full bg-purple-200 flex justify-center items-center">
+                        <i class="fa-solid fa-chart-column text-3xl text-gray-900"></i>
+                    </div>
+                    <h3 class="mt-5 text-gray-600">
+                        Die Buchhaltung
+                    </h3>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="md:p-8 lg:p-14 md:border-l md:border-gray-200 flex flex-col justify-center items-center">
+                    <div class="w-14 h-14 rounded-full bg-teal-200 flex justify-center items-center">
+                        <i class="fa-solid fa-truck-fast text-3xl text-gray-900"></i>
+                    </div>
+                    <p class="mt-5 text-base text-gray-600">Sortieren und Ordnen ihrer Buchhaltungsunterlagen
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div
+                    class="md:p-8 lg:p-14 md:border-l  md:border-r md:border-gray-200 flex flex-col justify-center items-center">
+                    <div class="w-14 h-14 rounded-full bg-yellow-200 flex justify-center items-center">
+                        <i class="fa-solid fa-shield text-3xl text-gray-900"></i>
+                    </div>
+                    <p class="mt-5 text-base text-gray-600">Kontieren der Belege ihrer laufenden Buchhaltung
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="md:p-8 lg:p-14  md:border-gray-200 flex flex-col justify-center items-center">
+                    <div class="w-14 h-14 rounded-full bg-red-200 flex justify-center items-center">
+                        <i class="fa-solid fa-cloud text-3xl text-gray-900"></i>
+                    </div>
+                    <p class="mt-5 text-base text-gray-600">Buchen der laufenden Geschäftsvorfälle der
+                        Finanzbuchhaltung/Bank und Kasse.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="md:p-8 lg:p-14 md:border-gray-200 md:border-t flex flex-col justify-center items-center">
+                    <div class="w-14 h-14 rounded-full bg-green-200 flex justify-center items-center">
+                        <i class="fa-solid fa-file-invoice-dollar text-3xl text-gray-900"></i>
+                    </div>
+                    <p class="mt-5 text-base text-gray-600">Debitoren- & Kreditorenbuchhaltung
+                    </p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div
+                    class="md:p-8 lg:p-14 md:border-l  md:border-r md:border-gray-200 md:border-t flex flex-col justify-center items-center">
+                    <div class="w-14 h-14 rounded-full bg-orange-200 flex justify-center items-center">
+                        <i class="fa-solid fa-bolt text-3xl text-gray-900"></i>
+                    </div>
+                    <p class="mt-5 text-base text-gray-600">Anlagenbuchhaltung
+                    </p>
+                </div>
+                <!-- Feature 7 -->
+                <div class="md:p-8 lg:p-14  md:border-gray-200 md:border-t flex flex-col justify-center items-center">
+                    <div class="w-14 h-14 rounded-full bg-green-200 flex justify-center items-center">
+                        <i class="fa-brands fa-watchman-monitoring text-3xl text-gray-900"></i>
+                    </div>
+                    <p class="mt-5 text-base text-gray-600">Kontrolle der Einhaltung an Steuerfristen
+                    </p>
+                </div>
+                <!-- Feature 8 -->
+                <div
+                    class="md:p-8 lg:p-14 md:border-l md:border-gray-200 md:border-t flex flex-col justify-center items-center">
+                    <div class="w-14 h-14 rounded-full bg-green-200 flex justify-center items-center">
+                        <i class="fa-solid fa-dna text-3xl text-gray-900"></i>
+                    </div>
+                    <p class="mt-5 text-base text-gray-600">
+                        Erstellung von betriebswirtschaftlichen und buchhalterischen Auswertungen
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="text-center">
+            <h2 class="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-5xl">
+                Unsere Leistungen </h2>
+            <p class="mt-4 text-base leading-7 text-gray-600 sm:mt-8">
+
+                Wir betreuen Gesellschaften, Einzelunternehmen, Freiberufler und Künstler in und um Berlin.
+            </p>
+        </div>
+        <div class="container mx-auto px-4 py-8">
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Service Block 1 -->
+                <a href="#"
+                    class="relative group block bg-cover bg-center aspect-square rounded-lg overflow-hidden shadow-lg"
+                    style="background-image: url('./assets/img/services/Gastronomie.jpg');">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-75 transition duration-300 ease-in-out">
+                    </div>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4">
+                        <h3
+                            class="text-white text-2xl font-bold mb-2 transform group-hover:-translate-y-2 transition duration-300 ease-in-out">
+                            Gastronomie</h3>
+                        <p
+                            class="text-white text-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                            Gastronomie</p>
+                    </div>
+                </a>
+                <!-- Service Block 2 -->
+                <a href="#"
+                    class="relative group block bg-cover bg-center aspect-square rounded-lg overflow-hidden shadow-lg"
+                    style="background-image: url('./assets/img/services/umzug1.jpg');">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-75 transition duration-300 ease-in-out">
+                    </div>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4">
+                        <h3
+                            class="text-white text-2xl font-bold mb-2 transform group-hover:-translate-y-2 transition duration-300 ease-in-out">
+                            Umzug</h3>
+                        <p
+                            class="text-white text-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                            Umzug, Spedition, Kuriere</p>
+                    </div>
+                </a>
+                <!-- Service Block 3 -->
+                <a href="#"
+                    class="relative group block bg-cover bg-center aspect-square rounded-lg overflow-hidden shadow-lg"
+                    style="background-image: url('./assets/img/services/bau.jpg');">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-75 transition duration-300 ease-in-out">
+                    </div>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4">
+                        <h3
+                            class="text-white text-2xl font-bold mb-2 transform group-hover:-translate-y-2 transition duration-300 ease-in-out">
+                            Bau und Handwerk</h3>
+                        <p
+                            class="text-white text-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                            Bau und Handwerk</p>
+                    </div>
+                </a>
+                <!-- Service Block 4 -->
+                <a href="#"
+                    class="relative group block bg-cover bg-center aspect-square rounded-lg overflow-hidden shadow-lg"
+                    style="background-image: url('./assets/img/services/kosmetic.jpg');">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-75 transition duration-300 ease-in-out">
+                    </div>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4">
+                        <h3
+                            class="text-white text-2xl font-bold mb-2 transform group-hover:-translate-y-2 transition duration-300 ease-in-out">
+                            Friseur und Kosmetik</h3>
+                        <p
+                            class="text-white text-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                            Friseur und Kosmetik</p>
+                    </div>
+                </a>
+                <!-- Service Block 5 -->
+                <a href="#"
+                    class="relative group block bg-cover bg-center aspect-square rounded-lg overflow-hidden shadow-lg"
+                    style="background-image: url('./assets/img/services/fitness.jpg');">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-75 transition duration-300 ease-in-out">
+                    </div>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4">
+                        <h3
+                            class="text-white text-2xl font-bold mb-2 transform group-hover:-translate-y-2 transition duration-300 ease-in-out">
+                            Fitness, Tanz und Events</h3>
+                        <p
+                            class="text-white text-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                            Fitness, Tanz und Events</p>
+                    </div>
+                </a>
+                <!-- Service Block 6 -->
+                <a href="#"
+                    class="relative group block bg-cover bg-center aspect-square rounded-lg overflow-hidden shadow-lg"
+                    style="background-image: url('./assets/img/services/youtube.jpg');">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-75 transition duration-300 ease-in-out">
+                    </div>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4">
+                        <h3
+                            class="text-white text-2xl font-bold mb-2 transform group-hover:-translate-y-2 transition duration-300 ease-in-out">
+                            Künstler und YouTube Channel</h3>
+                        <p
+                            class="text-white text-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                            Künstler und YouTube Channel</p>
+                    </div>
+                </a>
+
+                <!-- Service Block 7 -->
+                <a href="#"
+                    class="relative group block bg-cover bg-center aspect-square rounded-lg overflow-hidden shadow-lg"
+                    style="background-image: url('./assets/img/services/taxi.jpg');">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-75 transition duration-300 ease-in-out">
+                    </div>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4">
+                        <h3
+                            class="text-white text-2xl font-bold mb-2 transform group-hover:-translate-y-2 transition duration-300 ease-in-out">
+                            Taxis und Mietwagen</h3>
+                        <p
+                            class="text-white text-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                            Taxis und Mietwagen</p>
+                    </div>
+                </a>
+
+                <!-- Service Block 8 -->
+                <a href="#"
+                    class="relative group block bg-cover bg-center aspect-square rounded-lg overflow-hidden shadow-lg"
+                    style="background-image: url('./assets/img/services/import-and-export.jpg');">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-75 transition duration-300 ease-in-out">
+                    </div>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4">
+                        <h3
+                            class="text-white text-2xl font-bold mb-2 transform group-hover:-translate-y-2 transition duration-300 ease-in-out">
+                            Import And Export</h3>
+                        <p
+                            class="text-white text-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                            Import And Export</p>
+                    </div>
+                </a>
+
+                <!-- Service Block 9 -->
+                <a href="#"
+                    class="relative group block bg-cover bg-center aspect-square rounded-lg overflow-hidden shadow-lg"
+                    style="background-image: url('./assets/img/services/webshop.jpg');">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-75 transition duration-300 ease-in-out">
+                    </div>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4">
+                        <h3
+                            class="text-white text-2xl font-bold mb-2 transform group-hover:-translate-y-2 transition duration-300 ease-in-out">
+                            Webshops</h3>
+                        <p
+                            class="text-white text-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                            Einzel- und Großhandel, Webshops</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+    </section>
+
+    <div class="max-w-7xl mx-auto p-6">
+        <h1 class="text-4xl font-bold text-center text-gray-900 mb-6">Lohn- und Gehaltsabrechnung</h1>
+        <p class="text-center text-gray-600 mb-10">Ihr Partner für professionelle Lohnabrechnungen</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Monthly Services Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+                <img src="./assets/img/month.jpg" alt="Monthly Services" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold text-blue-800">Monatliche Leistungen</h2>
+                    <ul class="list-disc pl-5 text-gray-700 mt-3 space-y-2">
+                        <li>Abrechnung von Kurzarbeitergeld</li>
+                        <li>Beitragsberechnung inkl. Versand der Beitragsnachweise</li>
+                        <li>Erstattungsanträge</li>
+                        <li>An- und Abmeldungen Ihrer Arbeitnehmer</li>
+                        <li>Sofortmeldungen Ihrer Arbeitnehmer</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Annual Services Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+                <img src="./assets/img/year.jpg" alt="Annual Services" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold text-blue-800">Jährliche Leistungen</h2>
+                    <ul class="list-disc pl-5 text-gray-700 mt-3 space-y-2">
+                        <li>Jahreslohnjournal</li>
+                        <li>Lohnkonten am Jahresende</li>
+                        <li>Jahresentgeltmeldungen an den Rentenversicherungsträger</li>
+                        <li>Jahreslohnsteuerbescheinigungen</li>
+                        <li>Jahreslohnnachweise an die Berufsgenossenschaft</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Additional Services Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+                <img src="./assets/img/additional-services.jpg" alt="Construction Services"
+                    class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold text-blue-800">Zusatzleistungen für das Baugewerbe</h2>
+                    <ul class="list-disc pl-5 text-gray-700 mt-3 space-y-2">
+                        <li>Monatliche Erfassung und Bearbeitung der abrechnungsrelevanten Daten</li>
+                        <li>Monatliche Bruttolohnsummenmeldung SOKA</li>
+                        <li>Urlaubserstattungsanträge und Ausfallgeld-Erstattungen</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Pricing Information Section -->
+
+    <div class="w-full py-12 ">
+        <div class="container mx-auto  ">
+            <div class="bg-white p-8 rounded-lg shadow-2xl">
+                <h2 class="text-4xl font-bold mb-6 text-gray-900">Monatliche Lohn- und Gehaltsabrechnungen</h2>
+                <p class="text-gray-800 mb-6">
+                    Wir erstellen für Sie die monatlichen Lohn- und Gehaltsabrechnungen zu einem Pauschalpreis pro
+                    Arbeitnehmer.
+                </p>
+
+                <div class="bg-blue-50 p-6 border-l-4 border-blue-500 rounded mb-6">
+                    <h3 class="text-2xl font-semibold text-blue-800">Keine Zusatzkosten</h3>
+                    <p class="text-gray-800">
+                        Zusatzkosten wie z.B. für An- und Abmeldungen, U1 und U2-Abrechnungen oder Bescheinigungen für
+                        Ihre Mitarbeiter, z.B. für das Jobcenter, fallen bei uns nicht an.
+                    </p>
+                </div>
+
+                <p class="text-gray-800 mb-6">
+                    Sie wissen im Voraus genau, was die Lohnabrechnung Sie pro Monat kostet.
+                </p>
+
+                <div class="flex flex-wrap items-start mb-6">
+                    <div class="flex-1 mb-4 md:mb-0 md:pr-6">
+                        <h3 class="text-2xl font-semibold text-blue-800">Persönliche Betreuung</h3>
+                        <p class="text-gray-800">
+                            Erreichen Sie Ihre persönliche Lohnbuchhalterin telefonisch während unserer Geschäftszeiten
+                            oder rund um die Uhr per Email oder WhatsApp.
+                        </p>
+                    </div>
+
+                </div>
+
+                <p class="text-gray-800 mb-6">
+                    Auch die Unterlagen Ihrer Mitarbeiter können Sie uns gern so zukommen lassen.
+                </p>
+
+                <div class="flex items-center bg-blue-100 p-6 rounded shadow-inner">
+                    <svg class="w-8 h-8 text-blue-500 mr-4" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M15 17h5l-1.405-1.405a2.032 2.032 0 00-2.863 0L15 17zM15 17l-3-3a2 2 0 00-2.828 0L3 17h12zM12 7v4" />
+                    </svg>
+                    <div>
+                        <p class="font-medium text-blue-800">Fristgerechte Abgabe</p>
+                        <p class="text-gray-800">
+                            Wir kümmern uns um die pünktliche Abgabe der Beitragsnachweise und Ihrer Zahlungen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <section class="py-4 bg-white" id="team">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold leading-tight text-gray-900">Our Team</h2>
+            <p class="mt-2 text-gray-600">Lernen Sie uns besser kennen.</p>
+        </div>
+    </section>
+
+        <div class="mt-10 flex justify-center mb-8">
+            <div class="bg-white shadow-lg rounded-xl p-6 text-center w-80">
+                <img src="./assets/img/team/salem.jpg" alt="Profilbild" class="w-64 h-64 mx-auto rounded-full">
+                <h3 class="mt-4 text-xl font-semibold text-gray-800">Mohammad Salem Alfayoumi</h3>
+                <p class="text-gray-500">Geschäftsführer</p>
+                <p class="mt-3 text-gray-600 text-sm">
+                    Ich bin Salem, Geschäftsführer von Alfayoumi Finanzatelier & Beratung, mit über 7 Jahren Erfahrung in Unternehmensberatung, Buchhaltung und Lohnbuchhaltung. Zuverlässigkeit, Pünktlichkeit und Fleiß zeichnen meine Arbeit aus. Mein Fokus: präzise Lösungen, effiziente Prozesse und individuelle Beratung für den Erfolg meiner Kunden.                </p>
+                <div class="mt-4 flex justify-center gap-3">
+                    <a href="https://www.linkedin.com/in/salem-alfayoumi-04b18116b/" class="text-gray-700 hover:text-black">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="w-full bg-gray-800 text-gray-200 py-12" >
+        <div class=" mx-auto px-6 md:px-12 lg:px-24">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Column 1: About Section -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Über Uns</h3>
+                    <p class="text-gray-400">
+                        Wir sind Ihr verlässlicher Partner für Lohn- und Gehaltsabrechnungen, bieten individuelle
+                        Betreuung und sorgen für fristgerechte Abwicklung Ihrer Zahlungen.
+                    </p>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Schnellzugriff</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Dienstleistungen</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">Über Uns</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Kontakt</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact Information -->
+                <div id="kontakt">
+                    <h3 class="text-xl font-semibold mb-4 text-white">Kontakt</h3>
+                    <p class="text-gray-400">Telefon: <a href="tel:+49 15753639153" class="hover:text-white">+49 15753639153
+                            9</a></p>
+                    <p class="text-gray-400">Email: <a href="mailto:info@example.com"
+                            class="hover:text-white">alfayoumi.beratung@gmail.com</a></p>
+                    <p class="text-gray-400">Adresse: Großbeerenstraße 13 - 10963 Berlin</p>
+                                            <!-- Social media icons -->
+                    <!-- <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M22.675 0h-21.35c-.742 0-1.325.584-1.325 1.326v21.348c0 .742.583 1.326 1.325 1.326h11.498v-9.294h-3.131v-3.62h3.131v-2.671c0-3.1 1.894-4.785 4.659-4.785 1.325 0 2.465.099 2.796.143v3.24l-1.918.001c-1.503 0-1.794.714-1.794 1.762v2.311h3.588l-.467 3.62h-3.121v9.294h6.128c.742 0 1.325-.584 1.325-1.326v-21.349c0-.741-.583-1.325-1.325-1.325z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M23.954 4.569c-.885.392-1.83.656-2.825.775 1.014-.607 1.794-1.569 2.162-2.723-.949.564-2.003.974-3.127 1.195-.896-.959-2.173-1.558-3.591-1.558-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.128 1.124-4.087-.205-7.72-2.162-10.148-5.144-.423.729-.664 1.57-.664 2.476 0 1.71.87 3.213 2.19 4.096-.806-.026-1.564-.248-2.228-.616v.062c0 2.385 1.693 4.374 3.946 4.828-.413.112-.85.171-1.296.171-.317 0-.626-.031-.927-.088.627 1.956 2.444 3.377 4.604 3.417-1.68 1.318-3.804 2.104-6.104 2.104-.396 0-.786-.023-1.17-.068 2.179 1.396 4.768 2.209 7.557 2.209 9.054 0 14.001-7.496 14.001-13.986 0-.213-.005-.426-.014-.637.961-.695 1.8-1.562 2.457-2.548l-.047-.02z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm.38 15.53h-2.37v-7.03h2.37v7.03zm-1.18-8.22c-.76 0-1.38-.62-1.38-1.38s.62-1.38 1.38-1.38 1.38.62 1.38 1.38-.62 1.38-1.38 1.38zm10.17 8.22h-2.4v-4.09c0-1-.02-2.3-1.4-2.3-1.4 0-1.61 1.1-1.61 2.22v4.17h-2.38v-7.03h2.28v.96h.03c.31-.59 1.06-1.22 2.19-1.22 2.35 0 2.78 1.55 2.78 3.57v4.72z" />
+                            </svg>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="mt-12 text-center border-t border-gray-700 pt-6">
+                <p class="text-gray-500">© <span id="year"></span> Ihr Unternehmen. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.onscroll = function () { toggleNavbarBackground() };
+
+        function toggleNavbarBackground() {
+            const navbar = document.getElementById("navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.remove("bg-transparent");
+                navbar.classList.add("bg-gray-800");
+                navbar.classList.add("shadow-lg");
+            } else {
+                navbar.classList.remove("bg-white");
+                navbar.classList.remove("shadow-lg");
+                navbar.classList.add("bg-transparent");
+            }
+        }
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
