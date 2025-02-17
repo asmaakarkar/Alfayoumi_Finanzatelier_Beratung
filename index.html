@@ -28,12 +28,12 @@
                 </a>
                 <button
                     class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-                    type="button" onclick="toggleNavbar('example-collapse-navbar')">
+                    type="button" onclick="toggleNavbar('collapse-navbar')">
                     <i class="text-white fas fa-bars"></i>
                 </button>
             </div>
-            <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
-                id="example-collapse-navbar">
+            <div class="lg:flex flex-grow items-center w-full bg-white lg:bg-transparent lg:shadow-none hidden"
+                id="collapse-navbar">
                 <ul class="flex flex-col lg:flex-row list-none mx-auto">
                     <li class="flex items-center">
                         <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
@@ -71,7 +71,7 @@
                 <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
                     <li class="flex items-center">
                         <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                            href="https://www.linkedin.com/in/salem-alfayoumi-04b18116b/">
+                            href="https://www.linkedin.com/in/salem-alfayoumi-04b18116b/" target="_blank" rel="noopener noreferrer">
                             <i class="lg:text-gray-300 text-gray-500 fab fa-linkedin text-lg leading-lg"></i>
                             <span class="lg:hidden inline-block ml-2">linkedin</span>
                         </a>
@@ -96,7 +96,8 @@
     </nav>
 
     <!-- Page Content Section -->
-    <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;" id="home">
+    <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;"
+        id="home">
         <div class="absolute top-0 w-full h-full bg-center bg-cover"
             style='background-image: url("assets/img/steuer-head.jpeg");'>
             <span id="blackOverlay" class="w-full h-full absolute opacity-40 bg-black"></span>
@@ -106,9 +107,9 @@
                 <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                     <div class="pr-12">
                         <h1 class="text-white font-semibold text-5xl">
-                            Alfayoumi                        </h1>
+                            Alfayoumi </h1>
                         <h1 class="text-white font-semibold text-5xl">
-                              Finanzatelier & Beratung                         </h1>
+                            Finanzatelier & Beratung </h1>
                         <p class="mt-4 text-lg text-gray-300">
                             Wir begleiten ihr Unternehmen, egal ob Einzelfirma oder Gesellschaft, in guten und in
                             schlechten Zeiten.
@@ -563,7 +564,7 @@
         </div>
     </div>
 
-  
+
     <section class="py-4 bg-white" id="team">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-3xl font-bold leading-tight text-gray-900">Our Team</h2>
@@ -571,23 +572,26 @@
         </div>
     </section>
 
-        <div class="mt-10 flex justify-center mb-8">
-            <div class="bg-white shadow-lg rounded-xl p-6 text-center w-80">
-                <img src="./assets/img/team/salem.jpg" alt="Profilbild" class="w-64 h-64 mx-auto rounded-full">
-                <h3 class="mt-4 text-xl font-semibold text-gray-800">Mohammad Salem Alfayoumi</h3>
-                <p class="text-gray-500">Geschäftsführer</p>
-                <p class="mt-3 text-gray-600 text-sm">
-                    Ich bin Salem, Geschäftsführer von Alfayoumi Finanzatelier & Beratung, mit über 7 Jahren Erfahrung in Unternehmensberatung, Buchhaltung und Lohnbuchhaltung. Zuverlässigkeit, Pünktlichkeit und Fleiß zeichnen meine Arbeit aus. Mein Fokus: präzise Lösungen, effiziente Prozesse und individuelle Beratung für den Erfolg meiner Kunden.                </p>
-                <div class="mt-4 flex justify-center gap-3">
-                    <a href="https://www.linkedin.com/in/salem-alfayoumi-04b18116b/" class="text-gray-700 hover:text-black">
-                        <i class="fab fa-linkedin text-xl"></i>
-                    </a>
-                </div>
+    <div class="mt-10 flex justify-center mb-8">
+        <div class="bg-white shadow-lg rounded-xl p-6 text-center w-80">
+            <img src="./assets/img/team/salem.jpg" alt="Profilbild" class="w-64 h-64 mx-auto rounded-full">
+            <h3 class="mt-4 text-xl font-semibold text-gray-800">Mohammad Salem Alfayoumi</h3>
+            <p class="text-gray-500">Geschäftsführer</p>
+            <p class="mt-3 text-gray-600 text-sm">
+                Ich bin Salem, Geschäftsführer von Alfayoumi Finanzatelier & Beratung, mit über 7 Jahren Erfahrung in
+                Unternehmensberatung, Buchhaltung und Lohnbuchhaltung. Zuverlässigkeit, Pünktlichkeit und Fleiß zeichnen
+                meine Arbeit aus. Mein Fokus: präzise Lösungen, effiziente Prozesse und individuelle Beratung für den
+                Erfolg meiner Kunden. </p>
+            <div class="mt-4 flex justify-center gap-3">
+                <a href="https://www.linkedin.com/in/salem-alfayoumi-04b18116b/" class="text-gray-700 hover:text-black" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
             </div>
         </div>
+    </div>
     </section>
 
-    <footer class="w-full bg-gray-800 text-gray-200 py-12" >
+    <footer class="w-full bg-gray-800 text-gray-200 py-12">
         <div class=" mx-auto px-6 md:px-12 lg:px-24">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Column 1: About Section -->
@@ -613,12 +617,13 @@
                 <!-- Column 3: Contact Information -->
                 <div id="kontakt">
                     <h3 class="text-xl font-semibold mb-4 text-white">Kontakt</h3>
-                    <p class="text-gray-400">Telefon: <a href="tel:+49 15753639153" class="hover:text-white">+49 15753639153
+                    <p class="text-gray-400">Telefon: <a href="tel:+49 15753639153" class="hover:text-white">+49
+                            15753639153
                             9</a></p>
                     <p class="text-gray-400">Email: <a href="mailto:info@example.com"
                             class="hover:text-white">alfayoumi.beratung@gmail.com</a></p>
                     <p class="text-gray-400">Adresse: Großbeerenstraße 13 - 10963 Berlin</p>
-                                            <!-- Social media icons -->
+                    <!-- Social media icons -->
                     <!-- <div class="flex space-x-4 mt-4">
                         <a href="#" class="text-gray-400 hover:text-white">
                             <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
@@ -652,22 +657,9 @@
         </div>
     </footer>
 
-    <script>
-        window.onscroll = function () { toggleNavbarBackground() };
+    <script src="./script.js">
+  
 
-        function toggleNavbarBackground() {
-            const navbar = document.getElementById("navbar");
-            if (window.scrollY > 50) {
-                navbar.classList.remove("bg-transparent");
-                navbar.classList.add("bg-gray-800");
-                navbar.classList.add("shadow-lg");
-            } else {
-                navbar.classList.remove("bg-white");
-                navbar.classList.remove("shadow-lg");
-                navbar.classList.add("bg-transparent");
-            }
-        }
-        document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
 
